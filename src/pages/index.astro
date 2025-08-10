@@ -16,7 +16,7 @@ import Layout from '../layouts/Layout.astro';
             - Hosted on <a href="https://freedns.afraid.org">FreeDNS</a>
             <hr/>
 
-            <img src="/tomorrow.png" width="600px" alt="does anyone know if we have to keep going tomorrow" />
+            <img src="/tomorrow.png" class="tomorrow" alt="does anyone know if we have to keep going tomorrow" />
 
             <div class="icons">
                 <img src="/catticon.png" width="81px" height="33px" alt="catticon.png" />
@@ -49,12 +49,15 @@ import Layout from '../layouts/Layout.astro';
         text-decoration: none;
     }
     .icons {
-        width: 600px;
+        max-width: 100%;
         justify-content: center;
         display: flex;
     }
     .icons > img {
         margin-left: 5px;
         margin-right: 5px;
+    }
+    .tomorrow {
+        max-width: 100%;
     }
 </style>
